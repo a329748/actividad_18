@@ -10,12 +10,11 @@
 <body>
 	<div id="container">
 		<div id="app">
-			<button @click="getUsers">Get Users</button>
+			<h2>Actividad 18</h2>
+			<button @click="getUsers">Get users</button><br><br>
+			<h3>Users:</h3>
 			<ul v-for="user in users">
-				<li>{{user.name}} | {{user.company.name}}</li>
-			</ul><hr>
-			<ul v-for="user in usersA">
-				<li>{{user.name}} | {{user.company.name}}</li>
+				<li>{{user.name}}<span id="company"> – {{user.company.name}} – </span></li>
 			</ul>
 		</div>
 	</div>
